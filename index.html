@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Современный тренажёр по ПДД для школьников: тематические билеты, фотографии дорожных ситуаций и разбор ответов.">
+  <meta name="theme-color" content="#101c2d">
+  <title>ПДД — учебный тренажёр</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+  <header class="header">
+    <div class="container header-row">
+      <a class="brand" href="#home" aria-label="ПДД — на главную">
+        <span class="brand-mark">ПДД<span>/</span></span>
+        <span class="brand-name">УЧЕБНЫЙ ТРЕНАЖЁР</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Главная навигация">
+        <a href="#about">О проекте</a>
+        <a href="#rules">Памятка</a>
+        <a href="#tickets">Билеты</a>
+        <a href="#sources">Источники</a>
+      </nav>
+      <a class="header-cta" href="#tickets">Начать тест <span>↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="overline"><span class="live-dot"></span> ПРАКТИЧЕСКАЯ ЧАСТЬ ИТОГОВОГО ПРОЕКТА · 2026</div>
+          <h1>Дорога не прощает<br><em>невнимательности.</em></h1>
+          <p class="hero-lead">Интерактивный тренажёр по правилам дорожного движения для школьников 5–9 классов. Разбирай ситуации, решай билеты и учись замечать опасность заранее.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="#tickets">Выбрать билет <span>→</span></a>
+            <a class="text-link" href="#rules">Повторить основные правила <span>↗</span></a>
+          </div>
+          <div class="hero-author"><span class="author-line"></span><span>Автор проекта: <b>Ксандинов Савва Юрьевич</b>, 10 «Б» класс</span></div>
+        </div>
+        <div class="hero-photo-wrap">
+          <img class="hero-photo" src="https://images.unsplash.com/photo-1773154558364-d3207299a2ae?auto=format&fit=crop&w=1400&q=85" alt="Пешеходы на городской зебре, вид сверху">
+          <div class="photo-caption"><span>01 / ВНИМАНИЕ НА ДОРОГЕ</span><span>ПЕШЕХОДНАЯ БЕЗОПАСНОСТЬ</span></div>
+          <div class="hero-stamp"><b>20</b><span>ВОПРОСОВ<br>В БИЛЕТАХ</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>ПОВТОРЯЙ · АНАЛИЗИРУЙ · ЗАПОМИНАЙ</span>
+        <span>ЛИЧНЫЙ ОБРАЗОВАТЕЛЬНЫЙ ПРОЕКТ</span>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-head split-head">
+          <div><span class="section-index">01 — О ПРОЕКТЕ</span><h2>Практика вместо<br><em>зубрёжки.</em></h2></div>
+          <p>Сайт создан как самостоятельный личный проект ученика 10 класса. Он помогает школьникам повторять ПДД в удобном формате — без регистрации, школьных аккаунтов и сбора результатов.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature"><span class="feature-no">01</span><div class="feature-symbol">▤</div><h3>Тематические билеты</h3><p>Вопросы сгруппированы по темам: переход дороги, светофоры, остановки и безопасное поведение.</p></article>
+          <article class="feature"><span class="feature-no">02</span><div class="feature-symbol">◉</div><h3>Фото дорожных ситуаций</h3><p>Фотографии помогают представить обстановку и внимательнее рассмотреть детали вопроса.</p></article>
+          <article class="feature"><span class="feature-no">03</span><div class="feature-symbol">↻</div><h3>Разбор и повтор</h3><p>После ответа появляется объяснение. Ошибочные задания можно повторить и закрепить материал.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rules" id="rules">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-index">02 — КРАТКАЯ ПАМЯТКА</span>
+          <h2>Перед выходом<br><em>на дорогу.</em></h2>
+        </div>
+        <div class="rules-layout">
+          <div class="rules-photo">
+            <img src="https://images.unsplash.com/photo-1772489678302-9e11a75c1c09?auto=format&fit=crop&w=1100&q=85" alt="Городская улица с автомобилями и пешеходным переходом">
+            <div class="image-note">БЕЗОПАСНОСТЬ НАЧИНАЕТСЯ С ВНИМАНИЯ</div>
+          </div>
+          <div class="rule-list">
+            <article><span>01</span><div><h3>Выбирай пешеходный переход</h3><p>Переходи дорогу по переходу. Перед выходом на проезжую часть остановись и убедись, что водители тебя видят и пропускают.</p></div></article>
+            <article><span>02</span><div><h3>Соблюдай сигналы светофора</h3><p>Начинай переход только на разрешающий сигнал. Даже на зелёный сначала оцени обстановку и убедись, что машины остановились.</p></div></article>
+            <article><span>03</span><div><h3>Не выходи из-за препятствия</h3><p>Припаркованные машины и автобус могут закрывать обзор. Найди место, где дорога хорошо просматривается.</p></div></article>
+            <article><span>04</span><div><h3>Не отвлекайся на телефон</h3><p>Убери телефон и сними наушники перед переходом. На дороге важно слышать и видеть происходящее.</p></div></article>
+            <article><span>05</span><div><h3>Стань заметнее в темноте</h3><p>Используй световозвращающие элементы на одежде и рюкзаке, особенно в сумерках и ночью.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tickets" id="tickets">
+      <div class="container">
+        <div class="section-head ticket-heading">
+          <div><span class="section-index">03 — ИНТЕРАКТИВНЫЙ ТРЕНАЖЁР</span><h2>Выбери свой<br><em>билет.</em></h2></div>
+          <p>В каждом билете — 5 вопросов с фотографиями, вариантами ответа и объяснениями. Решай в своём темпе.</p>
+        </div>
+        <div class="ticket-grid" id="ticket-grid">
+          <button class="ticket-card" type="button" data-ticket="0">
+            <span class="ticket-top"><span>БИЛЕТ № 01</span><span class="ticket-arrow">↗</span></span>
+            <span class="ticket-title">Пешеход и переход</span>
+            <span class="ticket-description">Зебра, обзор дороги, безопасное пересечение проезжей части.</span>
+            <span class="ticket-bottom"><span>5 ВОПРОСОВ</span><span>НАЧАТЬ →</span></span>
+          </button>
+          <button class="ticket-card" type="button" data-ticket="1">
+            <span class="ticket-top"><span>БИЛЕТ № 02</span><span class="ticket-arrow">↗</span></span>
+            <span class="ticket-title">Светофор и сигналы</span>
+            <span class="ticket-description">Сигналы пешеходного светофора и действия перед переходом.</span>
+            <span class="ticket-bottom"><span>5 ВОПРОСОВ</span><span>НАЧАТЬ →</span></span>
+          </button>
+          <button class="ticket-card" type="button" data-ticket="2">
+            <span class="ticket-top"><span>БИЛЕТ № 03</span><span class="ticket-arrow">↗</span></span>
+            <span class="ticket-title">Остановка и транспорт</span>
+            <span class="ticket-description">Автобусы, остановки, ограниченная видимость и дорожные ловушки.</span>
+            <span class="ticket-bottom"><span>5 ВОПРОСОВ</span><span>НАЧАТЬ →</span></span>
+          </button>
+          <button class="ticket-card" type="button" data-ticket="3">
+            <span class="ticket-top"><span>БИЛЕТ № 04</span><span class="ticket-arrow">↗</span></span>
+            <span class="ticket-title">Безопасный маршрут</span>
+            <span class="ticket-description">Телефон, наушники, тёмное время суток и выбор пути.</span>
+            <span class="ticket-bottom"><span>5 ВОПРОСОВ</span><span>НАЧАТЬ →</span></span>
+          </button>
+        </div>
+
+        <div class="quiz-panel" id="quiz-panel" hidden>
+          <div class="quiz-header">
+            <button class="back-link" id="back-to-tickets" type="button">← Все билеты</button>
+            <div class="quiz-meta"><span id="quiz-ticket-name">БИЛЕТ № 01</span><span id="quiz-question-count">ВОПРОС 1 / 5</span></div>
+          </div>
+          <div class="quiz-progress"><div id="quiz-progress-fill"></div></div>
+          <div class="quiz-body">
+            <div class="question-side">
+              <span class="question-kicker" id="question-topic">ПЕШЕХОД И ПЕРЕХОД</span>
+              <h3 id="question-title">Вопрос</h3>
+              <div class="answers" id="answer-list" role="group" aria-label="Варианты ответа"></div>
+              <div class="explanation" id="explanation" hidden aria-live="polite"></div>
+              <div class="quiz-actions">
+                <span id="quiz-hint">Выбери один вариант ответа.</span>
+                <button class="btn btn-dark" id="answer-check" type="button" disabled>Ответить <span>→</span></button>
+              </div>
+            </div>
+            <figure class="question-photo">
+              <img id="question-image" src="" alt="">
+              <figcaption id="question-image-caption">ФОТОСИТУАЦИЯ · РАССМОТРИ ДЕТАЛИ</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="result-panel" id="result-panel" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="sources section" id="sources">
+      <div class="container sources-row">
+        <div><span class="section-index">04 — ИСТОЧНИКИ</span><h2>Материалы<br><em>для изучения.</em></h2><p>Шаблон списка источников для практической части проекта. Перед сдачей проекта его можно дополнить фактически использованными материалами.</p></div>
+        <div class="source-items">
+          <a href="https://unsplash.com/license" target="_blank" rel="noopener noreferrer"><span>01</span><div><b>Unsplash — фотографии</b><small>Фотографии: Elisaveta Bunduche, Binh Minh Duong, Danial Dezfouli, Yuriy Vertikov. Лицензия Unsplash.</small></div><span>↗</span></a>
+          <a href="https://commons.wikimedia.org/wiki/File:Pedestrian_traffic_light.jpg" target="_blank" rel="noopener noreferrer"><span>02</span><div><b>Wikimedia Commons — пешеходный светофор</b><small>Фото Tahrirchiqiz · CC BY 4.0.</small></div><span>↗</span></a>
+          <a href="https://www.gibdd.ru/" target="_blank" rel="noopener noreferrer"><span>03</span><div><b>Госавтоинспекция России</b><small>Информационные материалы по безопасности дорожного движения.</small></div><span>↗</span></a>
+          <a href="https://www.consultant.ru/document/cons_doc_LAW_2709/" target="_blank" rel="noopener noreferrer"><span>04</span><div><b>Правила дорожного движения РФ</b><small>Текст правил дорожного движения.</small></div><span>↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="#home"><span class="brand-mark">ПДД<span>/</span></span><span class="brand-name">УЧЕБНЫЙ ТРЕНАЖЁР</span></a><p>Личный образовательный проект о безопасном поведении на дороге.</p></div>
+      <div class="footer-project"><b>Итоговый проект, 10 класс</b><span>Тема: «Разработка сайта-тренажёра по ПДД для школьников»</span><span>Автор: Ксандинов Савва Юрьевич, 10 «Б» класс</span><span>Руководитель: Ковалев Максим Андреевич, учитель ОБЗР</span><span>2026 год</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 · Практическая часть итогового проекта</span><a href="#home">НАВЕРХ ↑</a></div>
+  </footer>
+  <button class="to-top" id="to-top" type="button" aria-label="Вернуться наверх">↑</button>
+</body>
+</html>
